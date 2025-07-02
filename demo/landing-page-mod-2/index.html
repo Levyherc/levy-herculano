@@ -1,0 +1,202 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinanSmart - Consultoria Financeira</title>
+    <meta name="description" content="Consultoria financeira especializada em planejamento financeiro para pessoas e empresas">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <a href="#inicio" class="logo">FinanSmart</a>
+            <ul class="nav-menu">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            <div class="mobile-menu-btn">
+                <div class="hamburger"></div>
+                <div class="hamburger"></div>
+                <div class="hamburger"></div>
+            </div>
+            <div class="mobile-menu" id="mobile-menu">
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-container">
+            <h1>Transforme sua vida financeira com a FinanSmart</h1>
+            <p>Consultoria especializada em planejamento financeiro para pessoas e empresas</p>
+            <a href="#contato" class="cta-button">Solicite uma Consulta</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="sobre" class="section about">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Sobre a FinanSmart</h2>
+            <div class="about-content">
+                <div class="animate-on-scroll">
+                    <p class="about-text">
+                        Somos uma consultoria financeira focada em ajudar pessoas e empresas a atingirem 
+                        a saúde financeira por meio de planejamento, investimentos e gestão de dívidas.
+                    </p>
+                    <p class="about-text">
+                        Com mais de 10 anos de experiência no mercado, nossa missão é proporcionar 
+                        atendimento humanizado e estratégias sob medida para cada cliente.
+                    </p>
+                </div>
+                <div class="animate-on-scroll">
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon">👥</div>
+                            <h3>Atendimento Humanizado</h3>
+                            <p>Cuidamos de cada cliente com atenção personalizada</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">🎯</div>
+                            <h3>Estratégias Sob Medida</h3>
+                            <p>Soluções personalizadas para suas necessidades</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">⭐</div>
+                            <h3>10+ Anos de Experiência</h3>
+                            <p>Expertise consolidada no mercado financeiro</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicos" class="section">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Nossos Serviços</h2>
+            <p class="section-subtitle animate-on-scroll">
+                Oferecemos soluções completas para sua saúde financeira
+            </p>
+            <div class="services-grid">
+                <div class="service-card animate-on-scroll">
+                    <h3>Planejamento Financeiro Pessoal</h3>
+                    <p>
+                        Desenvolvemos estratégias personalizadas para organizar suas finanças, 
+                        definir metas e construir sua independência financeira.
+                    </p>
+                </div>
+                <div class="service-card animate-on-scroll">
+                    <h3>Consultoria para MEIs e Pequenas Empresas</h3>
+                    <p>
+                        Auxiliamos microempreendedores e pequenas empresas na gestão financeira, 
+                        fluxo de caixa e planejamento estratégico.
+                    </p>
+                </div>
+                <div class="service-card animate-on-scroll">
+                    <h3>Educação Financeira para Famílias</h3>
+                    <p>
+                        Capacitamos famílias inteiras com conhecimento financeiro, 
+                        promovendo mudanças de hábitos e construção de patrimônio.
+                    </p>
+                </div>
+                <div class="service-card animate-on-scroll">
+                    <h3>Apoio na Renegociação de Dívidas</h3>
+                    <p>
+                        Ajudamos na negociação e reestruturação de dívidas, 
+                        criando um plano sustentável para quitação.
+                    </p>
+                </div>
+                <div class="service-card animate-on-scroll">
+                    <h3>Acompanhamento de Investimentos</h3>
+                    <p>
+                        Orientamos sobre as melhores opções de investimento 
+                        de acordo com seu perfil e objetivos financeiros.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contato" class="section contact">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Entre em Contato</h2>
+            <p class="section-subtitle animate-on-scroll">
+                Pronto para transformar sua vida financeira? Fale conosco!
+            </p>
+            <div class="contact-content">
+                <div class="contact-form animate-on-scroll">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Nome Completo</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Telefone</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Assunto</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensagem</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Enviar Mensagem</button>
+                    </form>
+                </div>
+                <div class="contact-info animate-on-scroll">
+                    <h3>Informações de Contato</h3>
+                    <p>
+                        Estamos prontos para ajudar você a alcançar seus objetivos financeiros. 
+                        Entre em contato conosco através dos canais abaixo:
+                    </p>
+                    <div class="contact-item">
+                        <span>📧</span>
+                        <span>contato@finansmart.com.br</span>
+                    </div>
+                    <div class="contact-item">
+                        <span>📱</span>
+                        <span>(11) 99999-9999</span>
+                    </div>
+                    <div class="contact-item">
+                        <span>📍</span>
+                        <span>São Paulo, SP - Brasil</span>
+                    </div>
+                    <div class="contact-item">
+                        <span>🕒</span>
+                        <span>Segunda a Sexta: 9h às 18h</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 FinanSmart - Consultoria Financeira. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produto - Loja Criativa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h1>Loja Criativa</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="produtos.html" class="nav-link">Produtos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="carrinho.html" class="nav-link">
+                            Carrinho <span id="cart-count" class="cart-count">0</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contato.html" class="nav-link">Contato</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <nav class="breadcrumb">
+                <a href="index.html">Início</a> > 
+                <a href="produtos.html">Produtos</a> > 
+                <span id="product-name">Produto</span>
+            </nav>
+
+            <div class="product-detail">
+                <div class="product-image-large">
+                    <img id="product-image" src="" alt="">
+                </div>
+                <div class="product-info-detail">
+                    <h1 id="product-title">Carregando...</h1>
+                    <div class="product-price-large">
+                        <span id="product-price">R$ 0,00</span>
+                    </div>
+                    <div class="product-description">
+                        <p id="product-desc">Descrição do produto...</p>
+                    </div>
+                    <div class="product-actions">
+                        <div class="quantity-selector">
+                            <label for="quantity">Quantidade:</label>
+                            <div class="quantity-controls">
+                                <button type="button" id="decrease-qty">-</button>
+                                <input type="number" id="quantity" value="1" min="1" max="10">
+                                <button type="button" id="increase-qty">+</button>
+                            </div>
+                        </div>
+                        <button id="add-to-cart" class="btn btn-primary btn-large">
+                            Adicionar ao Carrinho
+                        </button>
+                    </div>
+                    <div class="product-features">
+                        <h3>Características do Produto:</h3>
+                        <ul>
+                            <li>✅ Produto personalizado</li>
+                            <li>✅ Qualidade premium</li>
+                            <li>✅ Entrega rápida</li>
+                            <li>✅ Garantia de satisfação</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Loja Criativa</h3>
+                    <p>Produtos criativos e personalizados com a qualidade que você merece.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <p>📧 contato@lojacriativa.com.br</p>
+                    <p>📱 (11) 99999-9999</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Loja Criativa. Todos os direitos reservados.</p>
+                <p>Site Demonstração</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>

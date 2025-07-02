@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos - Loja Criativa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h1>Loja Criativa</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="produtos.html" class="nav-link active">Produtos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="carrinho.html" class="nav-link">
+                            Carrinho <span id="cart-count" class="cart-count">0</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contato.html" class="nav-link">Contato</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <section class="products-header">
+                <h1>Nossos Produtos</h1>
+                <p>Descubra nossa coleção de produtos criativos e personalizados</p>
+            </section>
+
+            <section class="products-grid">
+                <div class="product-card" data-id="1">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?w=400&h=300&fit=crop" alt="Caderno Personalizado">
+                    </div>
+                    <div class="product-info">
+                        <h3>Caderno Personalizado</h3>
+                        <p class="product-price">R$ 45,90</p>
+                        <a href="produto.html?id=1" class="btn btn-primary">Ver Detalhes</a>
+                    </div>
+                </div>
+
+                <div class="product-card" data-id="2">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1721322800607-8c38375eef04?w=400&h=300&fit=crop" alt="Quadro Decorativo">
+                    </div>
+                    <div class="product-info">
+                        <h3>Quadro Decorativo</h3>
+                        <p class="product-price">R$ 89,90</p>
+                        <a href="produto.html?id=2" class="btn btn-primary">Ver Detalhes</a>
+                    </div>
+                </div>
+
+                <div class="product-card" data-id="3">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=400&h=300&fit=crop" alt="Caneca Personalizada">
+                    </div>
+                    <div class="product-info">
+                        <h3>Caneca Personalizada</h3>
+                        <p class="product-price">R$ 29,90</p>
+                        <a href="produto.html?id=3" class="btn btn-primary">Ver Detalhes</a>
+                    </div>
+                </div>
+
+                <div class="product-card" data-id="4">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=400&h=300&fit=crop" alt="Agenda Criativa">
+                    </div>
+                    <div class="product-info">
+                        <h3>Agenda Criativa</h3>
+                        <p class="product-price">R$ 52,90</p>
+                        <a href="produto.html?id=4" class="btn btn-primary">Ver Detalhes</a>
+                    </div>
+                </div>
+
+                <div class="product-card" data-id="5">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=300&fit=crop" alt="Kit Presente">
+                    </div>
+                    <div class="product-info">
+                        <h3>Kit Presente Especial</h3>
+                        <p class="product-price">R$ 125,90</p>
+                        <a href="produto.html?id=5" class="btn btn-primary">Ver Detalhes</a>
+                    </div>
+                </div>
+
+                <div class="product-card" data-id="6">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=400&h=300&fit=crop" alt="Marcador de Páginas">
+                    </div>
+                    <div class="product-info">
+                        <h3>Marcador de Páginas</h3>
+                        <p class="product-price">R$ 15,90</p>
+                        <a href="produto.html?id=6" class="btn btn-primary">Ver Detalhes</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Loja Criativa</h3>
+                    <p>Produtos criativos e personalizados com a qualidade que você merece.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <p>📧 contato@lojacriativa.com.br</p>
+                    <p>📱 (11) 99999-9999</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Loja Criativa. Todos os direitos reservados.</p>
+                <p>Site Demonstração</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
