@@ -128,15 +128,14 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Project links
     document.querySelectorAll('.project-link').forEach(link => {
-        link.addEventListener('click', function(e) {
-            e.preventDefault();
-            const projectName = this.closest('.project-card').querySelector('h3').textContent;
-            showNotification(`Redirecionando para o projeto: ${projectName}`, 'info');
-            
-            // Here you would normally redirect to the actual project
-            // window.open('project-url', '_blank');
-        });
+    link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const projectName = this.closest('.project-card').querySelector('h3').textContent;
+        showNotification(`Redirecionando para o projeto: ${projectName}`, 'info');
+
+        window.open(this.href, '_blank'); // redireciona para o link em nova aba
     });
+});
     
     // Typing animation for hero title
     function typeWriter(element, text, speed = 100) {
