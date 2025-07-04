@@ -1,3 +1,4 @@
+
 // Smooth scrolling for navigation links
 document.addEventListener('DOMContentLoaded', function() {
     // Mobile menu toggle
@@ -17,9 +18,14 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Smooth scrolling for navigation links
+    // Smooth scrolling for navigation links (excluding projetos)
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
+            // Skip smooth scrolling for projetos section - allow normal page navigation
+            if (this.getAttribute('href') === '#projetos') {
+                return;
+            }
+            
             e.preventDefault();
             const target = document.querySelector(this.getAttribute('href'));
             if (target) {
@@ -126,17 +132,14 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Project links
-    document.querySelectorAll('.project-link').forEach(link => {
-    link.addEventListener('click', function(e) {
-        e.preventDefault();
-        const projectName = this.closest('.project-card').querySelector('h3').textContent;
+    // Project links - allow normal navigation
+document.querySelectorAll('.project-link').forEach(link => {
+    link.addEventListener('click', function () {
+        const projectName = this.closest('.project-card')?.querySelector('h3')?.textContent;
         showNotification(`Redirecionando para o projeto: ${projectName}`, 'info');
-
-        window.open(this.href, '_blank'); // redireciona para o link em nova aba
+        // NÃO bloqueia o clique, deixa o link funcionar normalmente
     });
 });
-    
     // Typing animation for hero title
     function typeWriter(element, text, speed = 100) {
         let i = 0;
@@ -205,21 +208,21 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // Email sending function using EmailJS
-// Email sending function using EmailJS
 async function sendEmail(data) {
-    const serviceID = 'service_il15r4l'; // Seu service ID
-    const templateID = 'template_ibl3tri'; // Seu Template ID
-    const userID = 'kmmqCe_gMiaKUhqlD'; // Seu User ID do EmailJS
-
+    // Configure EmailJS
+    const serviceID = 'service_il15r4l'; // 
+    const templateID = 'template_ibl3tri'; // 
+    const userID = 'kmmqCe_gMiaKUhqlD'; // 
+    
     const templateParams = {
-        from_name: data.nome,          // nome do usuário que preencheu
-        from_email: data.email,        // e-mail do usuário
+        from_name: data.nome,
+        from_email: data.email,
         tipo_negocio: data.tipoNegocio,
         message: data.mensagem,
-        reply_to: data.email          // opcional, mas útil
+        reply_to: data.email
     };
 
-    try {
+        try {
         const result = await emailjs.send(serviceID, templateID, templateParams, userID);
         console.log('Email enviado com sucesso:', result);
         return result;
@@ -228,6 +231,14 @@ async function sendEmail(data) {
         throw error;
     }
 }
+    
+    // Para implementar o EmailJS, você precisa:
+    // 1. Criar uma conta em https://www.emailjs.com/
+    // 2. Configurar um serviço de email (Gmail, Outlook, etc.)
+    // 3. Criar um template de email
+    // 4. Obter seu User ID e Service ID
+    // 5. Adicionar o script do EmailJS no HTML: <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    
 
 // Notification system
 function showNotification(message, type = 'info') {
