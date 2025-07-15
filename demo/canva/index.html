@@ -1,33 +1,167 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Projeto de Apresentação - Wave Cast</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos em Canva - Levy Herculano</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-  <header>
-    <h1>Design de Apresentação - Projeto Wave Cast</h1>
-    <p>Apresentação institucional desenvolvida no Canva</p>
-  </header>
-
-  <main>
-    <section>
-      <h2>🎨 Design de Apresentações</h2>
-      <p>Desenvolvi uma apresentação profissional no Canva, acompanhando aulas da Alura, 
-        combinando criatividade e estrutura. Explore essa criação impactante, com 
-        identidade visual consistente, em um dos formatos digitais mais universais.</p>
-      <p><em><strong> Material utiliza dados fictícios apenas para fins de apresentação.</strong></em></p>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1>Projetos em <span class="highlight">Canva</span></h1>
+                <p class="hero-subtitle">
+                    🚀 Designs criados durante as aulas da Alura 🚀
+                </p>
+                <div class="hero-badge">
+                    ❤️ Estamos animados para compartilhar conhecimento!
+                </div>
+            </div>
+        </div>
     </section>
 
-    <div class="pdf-container">
-      <embed src="Apresentacao-WaveCast.pdf" type="application/pdf" width="100%" height="600px" />
-    </div>
-  </main>
+    <!-- Apresentações Section -->
+    <section class="presentations">
+        <div class="container">
+            <div class="section-header">
+                <h2>📊 Apresentações Profissionais</h2>
+                <p class="section-description">
+                    Desenvolvi apresentações no Canva, combinando criatividade, estrutura e identidade visual, 
+                    acompanhando as aulas da Alura. Os materiais apresentados a seguir representam diferentes 
+                    formatos de comunicação e aprendizagem.
+                </p>
+                <p class="disclaimer">
+                    <em>Todos os conteúdos utilizam dados fictícios, com fins exclusivamente educacionais.</em>
+                </p>
+            </div>
 
-  <footer>
-    <p>&copy; 2025 Levy Herculano</p>
-  </footer>
+            <div class="presentations-grid">
+                <div class="presentation-card">
+                    <div class="card-icon">📄</div>
+                    <div class="card-content">
+                        <h3>📗 Apresentação: Atendimento ao Cliente</h3>
+                        <p>Material completo sobre estratégias de atendimento ao cliente</p>
+                        <div class="button-container">
+                            <button class="btn btn-primary" onclick="openPDF('./pdf/Apresentacao-Atendimento.pdf')">
+                                👁️ Visualizar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="presentation-card">
+                    <div class="card-icon">📊</div>
+                    <div class="card-content">
+                        <h3>📗 Apresentação: Vendas e Marketing</h3>
+                        <p>Técnicas avançadas de vendas e estratégias de marketing</p>
+                        <div class="button-container">
+                            <button class="btn btn-primary" onclick="openPDF('./pdf/Apresentacao-Empresa.pdf')">
+                                👁️ Visualizar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeria de Projetos -->
+    <section class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2>📌 Galeria de Projetos</h2>
+                <p class="section-description">
+                    Explore os designs criados com foco em comunicação visual efetiva
+                </p>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="project-card" data-type="Interface">
+                    <div class="project-image">
+                        <img src="./img/atividade.png" 
+                             alt="Instruções de Início">
+                        <div class="project-overlay"></div>
+                        <span class="project-type">Interface</span>
+                    </div>
+                    <div class="project-content">
+                        <h3>Instruções de Início</h3>
+                        <p>Tela de boas-vindas com instruções para iniciar atividades</p>
+                        <div class="button-container">
+                            <button class="btn btn-secondary" onclick="openImage('./img/atividade.png')">
+                                👁️ Visualizar Imagem
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-type="Banner">
+                    <div class="project-image">
+                        <img src="./img/banner-plat.png" 
+                             alt="Banner de Boas-vindas">
+                        <div class="project-overlay"></div>
+                        <span class="project-type">Banner</span>
+                    </div>
+                    <div class="project-content">
+                        <h3>Banner de Boas-vindas</h3>
+                        <p>Banner dinâmico com mensagem de boas-vindas e elementos visuais</p>
+                        <div class="button-container">
+                            <button class="btn btn-secondary" onclick="openImage('./img/banner-plat.png')">
+                                👁️ Visualizar Imagem
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-type="Cartão">
+                    <div class="project-image">
+                        <img src="./img/rotulo.png" 
+                             alt="Cartão de Boas-vindas">
+                        <div class="project-overlay"></div>
+                        <span class="project-type">Cartão</span>
+                    </div>
+                    <div class="project-content">
+                        <h3>Cartão de Boas-vindas</h3>
+                        <p>Mensagem de boas-vindas em formato de cartão elegante</p>
+                        <div class="button-container">
+                            <button class="btn btn-secondary" onclick="openImage('./img/rotulo.png')">
+                                👁️ Visualizar Imagem
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-type="Promocional">
+                    <div class="project-image">
+                        <img src="./img/vale.png" 
+                             alt="Vale Curso - Persuadir Pessoas">
+                        <div class="project-overlay"></div>
+                        <span class="project-type">Promocional</span>
+                    </div>
+                    <div class="project-content">
+                        <h3>Vale Curso - Persuadir Pessoas</h3>
+                        <p>Design promocional para curso sobre persuasão</p>
+                        <div class="button-container">
+                            <button class="btn btn-secondary" onclick="openImage('./img/vale.png')">
+                                👁️ Visualizar Imagem
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 <span class="highlight">Levy Herculano</span></p>
+            <p class="footer-subtitle">Projetos desenvolvidos durante o curso da Alura</p>
+        </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
 </body>
 </html>
